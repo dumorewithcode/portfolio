@@ -1,0 +1,54 @@
+[
+    
+{
+    "name": "node",
+    "url": "https://cdn.svgporn.com/logos/nodejs.svg",
+    "link": "https://nodejs.org/en/"
+},
+{
+    "name": "react",
+    "url": "https://cdn.svgporn.com/logos/react.svg",
+    "link": "https://reactjs.org/"
+},
+{
+    "name": "materialui",
+    "url": "https://cdn.svgporn.com/logos/material-ui.svg",
+    "link": "https://material-ui.com/"
+},
+{
+    "name": "gatsby",
+    "url": "https://cdn.svgporn.com/logos/gatsby.svg",
+    "link": "https://www.gatsbyjs.org/"
+},
+{
+    "name": "apollo",
+    "url": "https://cdn.svgporn.com/logos/apollostack.svg",
+    "link": "https://www.apollographql.com/"
+},
+{
+    "name": "redis",
+    "url": "https://cdn.svgporn.com/logos/redis.svg",
+    "link": "https://redis.io/"
+},
+{
+    "name": "docker",
+    "url": "https://cdn.svgporn.com/logos/docker.svg",
+    "link": "https://www.docker.com/"
+},
+{
+    "name": "kubernetes",
+    "url": "https://cdn.svgporn.com/logos/kubernetes.svg",
+    "link": "https://kubernetes.io/"
+},
+{
+    "name": "travis.ci",
+    "url": "https://cdn.svgporn.com/logos/travis-ci.svg",
+    "link": "https://travis-ci.org/"
+},
+{
+    "name": "aws",
+    "url": "https://cdn.svgporn.com/logos/aws.svg",
+    "link": "https://aws.amazon.com/"
+}
+
+]
