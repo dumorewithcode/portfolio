@@ -1,6 +1,5 @@
 version: '3'
 services:
-
   redis:
       image: redis:5.0.5-alpine
       command: 
@@ -22,6 +21,8 @@ services:
       context: ./server
     volumes:
       - ./server:/portfolio/app
+    environment:
+      - REDIS_URL = redis://db
 
   client:
     build: 
