@@ -21,6 +21,8 @@ services:
       context: ./server
     volumes:
       - ./server:/portfolio/app
+      links:
+      - redis
     environment:
       - REDIS_URL = redis://db
 
@@ -32,7 +34,7 @@ services:
       - ./client:/usr/app
       - /portfolio/app/client/node_modules
     links:
-      - redis
+      - server
     ports:
       - "8000:8000"
     depends_on:
