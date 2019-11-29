@@ -5,9 +5,8 @@
  */
 
 module.exports = {
-  plugins:[
-    {
-      resolve: '',
-    }
-  ]
+  pathPrefix: "/portfolio",
+  siteMetadata: {
+    title: `Jamal's Portfolio`,
+  }
 }

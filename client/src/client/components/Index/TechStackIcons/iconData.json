@@ -1,10 +1,15 @@
 [
-    
 {
-    "name": "node",
-    "url": "https://cdn.svgporn.com/logos/nodejs.svg",
-    "link": "https://nodejs.org/en/"
+    "name": "java",
+    "url": "https://cdn.svgporn.com/logos/java.svg",
+    "link": "https://www.java.com/en/"
 },
+{
+    "name": "spring",
+    "url": "https://cdn.svgporn.com/logos/spring.svg",
+    "link": "https://spring.io/"
+},
+
 {
     "name": "react",
     "url": "https://cdn.svgporn.com/logos/react.svg",
@@ -16,14 +21,9 @@
     "link": "https://material-ui.com/"
 },
 {
-    "name": "gatsby",
-    "url": "https://cdn.svgporn.com/logos/gatsby.svg",
-    "link": "https://www.gatsbyjs.org/"
-},
-{
-    "name": "apollo",
-    "url": "https://cdn.svgporn.com/logos/apollostack.svg",
-    "link": "https://www.apollographql.com/"
+    "name": "hibernate",
+    "url": "https://cdn.svgporn.com/logos/hibernate.svg",
+    "link": "http://hibernate.org/"
 },
 {
     "name": "redis",
@@ -32,7 +32,7 @@
 },
 {
     "name": "docker",
-    "url": "https://cdn.svgporn.com/logos/docker.svg",
+    "url": "https://cdn.svgporn.com/logos/docker-icon.svg",
     "link": "https://www.docker.com/"
 },
 {
@@ -41,14 +41,8 @@
     "link": "https://kubernetes.io/"
 },
 {
-    "name": "travis.ci",
-    "url": "https://cdn.svgporn.com/logos/travis-ci.svg",
-    "link": "https://travis-ci.org/"
-},
-{
     "name": "aws",
     "url": "https://cdn.svgporn.com/logos/aws.svg",
     "link": "https://aws.amazon.com/"
 }
-
 ]
