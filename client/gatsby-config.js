@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  plugins: [`gatsby-plugin-material-ui`],
   pathPrefix: "/portfolio",
   siteMetadata: {
     title: `Jamal's Portfolio`,
