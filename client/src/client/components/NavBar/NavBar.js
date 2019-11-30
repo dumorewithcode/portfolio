@@ -40,7 +40,7 @@ const styles = {
     fontFamily: '"Montserrat"',
     color: "#fff",
     textDecoration: "none",
-    fontSize: "4.5vmin",
+    fontSize: "2.7vmin",
   },
 
   toolbarContainer: {
