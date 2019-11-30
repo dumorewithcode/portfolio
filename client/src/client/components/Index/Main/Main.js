@@ -15,8 +15,6 @@ const styles = {
     justifyContent: "center",
     height: "60%",
     alignItems: "center",
-    //overflow: 'auto',
-    //border: '1px solid white'
   },
   text: {
     textAlign: "center",
