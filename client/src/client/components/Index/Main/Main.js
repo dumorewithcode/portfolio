@@ -29,8 +29,6 @@ const styles = {
     justifyContent: "center",
     height: "70%"
   },
-
-  
 };
 
 function Main(props) {
