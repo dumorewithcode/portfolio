@@ -1,0 +1,48 @@
+[
+{
+    "name": "java",
+    "url": "https://cdn.svgporn.com/logos/java.svg",
+    "link": "https://www.java.com/en/"
+},
+{
+    "name": "spring",
+    "url": "https://cdn.svgporn.com/logos/spring.svg",
+    "link": "https://spring.io/"
+},
+
+{
+    "name": "react",
+    "url": "https://cdn.svgporn.com/logos/react.svg",
+    "link": "https://reactjs.org/"
+},
+{
+    "name": "materialui",
+    "url": "https://cdn.svgporn.com/logos/material-ui.svg",
+    "link": "https://material-ui.com/"
+},
+{
+    "name": "hibernate",
+    "url": "https://cdn.svgporn.com/logos/hibernate.svg",
+    "link": "http://hibernate.org/"
+},
+{
+    "name": "redis",
+    "url": "https://cdn.svgporn.com/logos/redis.svg",
+    "link": "https://redis.io/"
+},
+{
+    "name": "docker",
+    "url": "https://cdn.svgporn.com/logos/docker-icon.svg",
+    "link": "https://www.docker.com/"
+},
+{
+    "name": "kubernetes",
+    "url": "https://cdn.svgporn.com/logos/kubernetes.svg",
+    "link": "https://kubernetes.io/"
+},
+{
+    "name": "aws",
+    "url": "https://cdn.svgporn.com/logos/aws.svg",
+    "link": "https://aws.amazon.com/"
+}
+]
