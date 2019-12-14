@@ -1,15 +1,14 @@
 [
 {
-    "name": "java",
-    "url": "https://cdn.svgporn.com/logos/java.svg",
-    "link": "https://www.java.com/en/"
+    "name": "python",
+    "url": "https://cdn.svgporn.com/logos/python.svg",
+    "link": "https://www.python.org/"
 },
 {
-    "name": "spring",
-    "url": "https://cdn.svgporn.com/logos/spring.svg",
-    "link": "https://spring.io/"
+    "name": "flask",
+    "url": "https://cdn.svgporn.com/logos/flask.svg",
+    "link": "https://palletsprojects.com/p/flask/"
 },
-
 {
     "name": "react",
     "url": "https://cdn.svgporn.com/logos/react.svg",
@@ -21,9 +20,14 @@
     "link": "https://material-ui.com/"
 },
 {
-    "name": "hibernate",
-    "url": "https://cdn.svgporn.com/logos/hibernate.svg",
-    "link": "http://hibernate.org/"
+    "name": "graphql",
+    "url": "https://cdn.svgporn.com/logos/graphql.svg",
+    "link": "http://graphql.org/"
+},
+{
+    "name": "sql",
+    "url": "https://cdn.svgporn.com/logos/mysql.svg",
+    "link": "https://dev.mysql.com/"
 },
 {
     "name": "redis",
