@@ -25,14 +25,9 @@
     "link": "http://graphql.org/"
 },
 {
-    "name": "sql",
+    "name": "mysql",
     "url": "https://cdn.svgporn.com/logos/mysql.svg",
     "link": "https://dev.mysql.com/"
-},
-{
-    "name": "redis",
-    "url": "https://cdn.svgporn.com/logos/redis.svg",
-    "link": "https://redis.io/"
 },
 {
     "name": "docker",
