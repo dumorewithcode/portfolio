@@ -12,34 +12,29 @@ import "./Main.css";
 const styles = {
   root: {
     display: "flex",
-    // flexDirection: "column",
+    flexDirection: 'column',
     justifyContent: "center",
     height: "60%",
-    alignItems: "center",
   },
   text: {
     textAlign: "center",
     fontFamily: '"Montserrat"',
     fontSize: "12vmin",
     color: "#727272",
-    lineHeight: 1.2
   },
   textContainer: {
     display: "flex",
     flexDirection: "column",
-    marginTop: 0,
   },
-  heading: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-evenly",
-    height: "70%",
+  iconsContainer:{
+    display: 'flex',
+    justifyContent: 'center',
+    
   },
   profileIconsContainer: {
     display: "flex",
-    flexDirection: "row",
-    justifyContent:'space-evenly',
-    flexDirection: 'row',
+    justifyContent:'space-around',
+    width: '40%'
   },
   icons: {
     maxHeight: 30,
@@ -50,8 +45,10 @@ function Main(props) {
   const { classes } = props;
   return (
     <div id='mainRoot' className={classes.root}>
-      <div id='heading' className={classes.heading}>
         <div className={classNames(classes.textContainer, "textContainer")}>
+        <Typography className={classNames(classes.text, "text")}>
+          Junior
+        </Typography>
         <Typography className={classNames(classes.text, "text")}>
           Software
         </Typography>
@@ -59,6 +56,8 @@ function Main(props) {
           Developer
         </Typography>
         </div>
+      
+        <div className={classNames(classes.iconsContainer, "iconsContainer")}>
         <div className={classNames(classes.profileIconsContainer, "profileIconsContainer")}>
         {profileIcons.map(icon => (
           <div className={classNames(classes.iconContainer, "iconContainer")} key={icon.url}>
@@ -73,8 +72,8 @@ function Main(props) {
           </div>
         ))}
         </div>
-      </div>
-    </div>
+        </div>
+       </div>
   );
 }
 

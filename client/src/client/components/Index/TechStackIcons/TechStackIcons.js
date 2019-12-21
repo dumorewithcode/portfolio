@@ -19,7 +19,7 @@ techStack: {
     width: "80px",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: '20px'
+    marginTop: '50px'
   },
 
   icons: {

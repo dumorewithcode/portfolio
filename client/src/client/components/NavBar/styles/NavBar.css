@@ -4,15 +4,14 @@
   .largeNavBar{
     display: none;
     }
-    
-  }
+}
 
 
 @media only screen and (min-width: 769px){
-#mobileNavBar{
-  display: none;
-  visibility: hidden;
+  #mobileNavBar{
+    display: none;
+    visibility: hidden;
+  }
 }
 
-}
 

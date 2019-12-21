@@ -20,6 +20,7 @@ const styles = {
     flexDirection: "column",
     //height: "20%",
     justifyContent: "space-between",
+    
     // border: '1px solid black',
   },
   largeNavBar: {
@@ -46,15 +47,21 @@ const styles = {
   toolbarContainer: {
     width: "100%",
     display: "flex",
+    
+    // display: 'block',
+    flex: 'auto',
     justifyContent: "center",
     height: "30%",
   },
 
   toolbar: {
-    width: "75%",
-    justifyContent: "space-evenly",
     display: "flex",
-    flexFlow: "row wrap",
+    width: "75%",
+    justifyContent: "space-around",
+    position:'relative',
+    // flex: 'auto',
+    flexFlow: "row",
+    // position: 'absolute'
   },
 
   navButtons: {
@@ -151,7 +158,7 @@ class NavBar extends Component {
           <div
             className={classNames(classes.toolbarContainer, "toolbarContainer")}
           >
-            <div className={classNames(classes.toolbar, "toolbar")}>
+            <div id='toolbar' className={classNames(classes.toolbar, "toolbar")}>
               {navBarData.map(data => (
                 <Button
                   classes={{ label: classes.navButtonsLabel }}

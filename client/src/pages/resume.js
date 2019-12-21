@@ -1,9 +1,23 @@
 import React from 'react'
+import resume from '../client/assets/resume.pdf'
+import {makeStyles} from '@material-ui/core/styles'
+
+const useStyles = makeStyles(()=>({
+    object:{
+        width:'100%',
+        minHeight:'100vh',
+        overflow: 'scrollbar'
+    }
+}));
 
 
 const Resume = () => {
+    const classes = useStyles();
+     
     return (
-            <iframe src="https://drive.google.com/drive/u/0/folders/1AL71bNvdzjyASFbiV9AyC-s7Yn8qkmxK"  title="resume" width="100%" height="1000px"></iframe>
+        <object data={resume} type="application/pdf" className={classes.object}>
+            <embed src={resume} type="application/pdf" />
+        </object>
     )
 }
 

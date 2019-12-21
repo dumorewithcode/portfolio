@@ -1,4 +1,4 @@
-import React, { useEffect }from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -10,9 +10,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Link from '@material-ui/core/Link'
+import Link from '@material-ui/core/Link';
 import "typeface-montserrat";
 
 
@@ -42,9 +41,6 @@ const useStyles = makeStyles(theme => ({
   },
   expandOpen: {
     transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: red[500],
   },
   cardHeader: {
     textAlign: 'center',
@@ -88,11 +84,7 @@ export default function ProjectCards() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  
-  // useEffect(() => try{document.getElementById("iframeM").setAttribute("allowfullscreen","true")
-  //                     document.getElementById("iframeM").setAttribute("src", "https://www.youtube.com/embed/Ke90Tje7VS0")}
-  //                     catch(error){console.log(error)}, []);
-  
+ 
 
   return (
     <div id='mainRoot' className={classes.root}>
