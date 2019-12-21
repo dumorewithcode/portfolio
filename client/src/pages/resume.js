@@ -6,7 +6,7 @@ const useStyles = makeStyles(()=>({
     object:{
         width:'100%',
         minHeight:'100vh',
-        overflow: 'scrollbar'
+        overflow: 'hidden'
     }
 }));
 
