@@ -50,10 +50,10 @@ function Main(props) {
           Junior
         </Typography>
         <Typography className={classNames(classes.text, "text")}>
-          Software
+          Penetration
         </Typography>
         <Typography className={classNames(classes.text, "text")}>
-          Developer
+          Tester
         </Typography>
         </div>
       
