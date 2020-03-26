@@ -17,31 +17,16 @@
 {
     "name": "materialui",
     "url": "https://cdn.svgporn.com/logos/material-ui.svg",
-    "link": "https://material-ui.com/"
+    "link": "https://portswigger.net/"
 },
 {
-    "name": "graphql",
-    "url": "https://cdn.svgporn.com/logos/graphql.svg",
-    "link": "http://graphql.org/"
+    "name": "git",
+    "url": "https://cdn.svgporn.com/logos/git-icon.svg",
+    "link": "https://git-scm.com/"
 },
 {
-    "name": "mysql",
-    "url": "https://cdn.svgporn.com/logos/mysql.svg",
-    "link": "https://dev.mysql.com/"
-},
-{
-    "name": "docker",
-    "url": "https://cdn.svgporn.com/logos/docker-icon.svg",
-    "link": "https://www.docker.com/"
-},
-{
-    "name": "kubernetes",
-    "url": "https://cdn.svgporn.com/logos/kubernetes.svg",
-    "link": "https://kubernetes.io/"
-},
-{
-    "name": "aws",
-    "url": "https://cdn.svgporn.com/logos/aws.svg",
-    "link": "https://aws.amazon.com/"
+    "name": "gatsby",
+    "url": "https://cdn.svgporn.com/logos/gatsby.svg",
+    "link": "https://www.gatsbyjs.org/"
 }
 ]

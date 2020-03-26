@@ -88,6 +88,7 @@ export default function ProjectCards() {
 
   return (
     <div id='mainRoot' className={classes.root}>
+    <div id='card1'>
     <Card className={classes.card} elevation={0} key={1}>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
       <CardHeader
@@ -153,6 +154,76 @@ export default function ProjectCards() {
         </CardContent>
       </Collapse>
     </Card>
+    </div>
+    
+    
+    <div id='card2'>
+    <Card className={classes.card} elevation={0} key={2}>
+      <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
+      <CardHeader
+        title="Command Line Web Scraper"
+      />
+      </Typography>
+      <CardActionArea>
+      <CardMedia
+        id ="iframeM"
+        component="iframe"
+        className={classes.media}
+        image="https://www.youtube.com/embed/yVb1EeJr90I"
+        title="scraper"
+        frameBorder={0}
+        allowfullscreen
+      />
+      </CardActionArea>
+      <CardContent >
+        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
+          Written in Python and bundled for Windows, Linux and Mac, this tool was written for a colleague that required gamelogs data for each team listed on 
+          <Link href="https://www.sports-reference.com/cbb/seasons/2019-school-stats.html" target="_blank" rel="noopener noreferrer" className={classes.link}> this page</Link>. 
+          This tool retrieves the gamelogs for each team for a specific year or start from a specific year and return the gamelogs for every subsequent year e.g.(2012 - current year).
+          This data is then exported as a csv document. 
+          Instructions for usage and modules used are specified below.
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites" className={classes.iconButton}>
+          <a href='https://github.com/jmsct/scraper' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
+        </IconButton>
+        <IconButton
+          className={clsx(classes.expand, {
+            [classes.expandOpen]: expanded,
+          })}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        >
+          <ExpandMoreIcon />
+        </IconButton>
+      </CardActions>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
+          <Typography paragraph className={classes.typography}>
+            git clone https://github.com/jmsct/scraper 
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           Open relevant OS folder and run scraper
+          </Typography>
+          <Typography paragraph className={classes.cardInfoHeaders}>
+           Modules used:
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           Python csv (makes exporting to csv a breeze)
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           BeautifulSoup (html parser)
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           grequests (for making asynchronous calls)
+          </Typography>
+        </CardContent>
+      </Collapse>
+    </Card>
+    </div>
     </div>
   );
 }

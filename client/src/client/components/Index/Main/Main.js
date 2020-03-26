@@ -9,6 +9,7 @@ import "typeface-montserrat";
 import "./Main.css";
 
 
+
 const styles = {
   root: {
     display: "flex",
@@ -46,14 +47,12 @@ function Main(props) {
   return (
     <div id='mainRoot' className={classes.root}>
         <div className={classNames(classes.textContainer, "textContainer")}>
+        
         <Typography className={classNames(classes.text, "text")}>
-          Junior
+          InfoSec
         </Typography>
         <Typography className={classNames(classes.text, "text")}>
-          Penetration
-        </Typography>
-        <Typography className={classNames(classes.text, "text")}>
-          Tester
+          Analyst
         </Typography>
         </div>
       

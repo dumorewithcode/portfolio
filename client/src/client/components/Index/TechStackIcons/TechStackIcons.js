@@ -5,6 +5,7 @@ import classNames from "classnames";
 import "typeface-montserrat";
 import iconData from "./iconData.json";
 
+import burp_logo from "../../../assets/icons/burp-icon.png"
 
 const styles = {
 techStack: {
@@ -47,6 +48,16 @@ function TechStackIcons(props) {
             </a>
           </div>
         ))}
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+        <a href="https://portswigger.net/" target="blank">
+              <img
+                src={burp_logo}
+                alt=""
+                title="burpsuite"
+                className={classNames(classes.icons, "icons")}
+              />
+            </a>
+            </div>
       </div>
   );
 }
