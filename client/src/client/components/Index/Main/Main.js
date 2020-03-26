@@ -15,7 +15,7 @@ const styles = {
     display: "flex",
     flexDirection: 'column',
     justifyContent: "center",
-    height: "60%",
+    height: "50%",
   },
   text: {
     textAlign: "center",
@@ -30,7 +30,6 @@ const styles = {
   iconsContainer:{
     display: 'flex',
     justifyContent: 'center',
-    
   },
   profileIconsContainer: {
     display: "flex",
@@ -47,32 +46,17 @@ function Main(props) {
   return (
     <div id='mainRoot' className={classes.root}>
         <div className={classNames(classes.textContainer, "textContainer")}>
-        
         <Typography className={classNames(classes.text, "text")}>
-          InfoSec
+         Cyber  
+        </Typography>
+        <Typography className={classNames(classes.text, "text")}>
+          Security
         </Typography>
         <Typography className={classNames(classes.text, "text")}>
           Analyst
         </Typography>
         </div>
-      
-        <div className={classNames(classes.iconsContainer, "iconsContainer")}>
-        <div className={classNames(classes.profileIconsContainer, "profileIconsContainer")}>
-        {profileIcons.map(icon => (
-          <div className={classNames(classes.iconContainer, "iconContainer")} key={icon.url}>
-            <a href={icon.link} target="blank">
-              <img
-                src={icon.url}
-                alt={icon.name}
-                title={icon.name}
-                className={classNames(classes.icons, "icons")}
-              />
-            </a>
-          </div>
-        ))}
-        </div>
-        </div>
-       </div>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
     flexWrap: 'wrap',
-    justifyContent: "center",
+    justifyContent: "space-evenly",
   },
   card: {
     maxWidth: 400,
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   media: {
     height: 360,
     maxWidth: 400,
-    // paddingTop: '56.25%', // 16:9
+    minWidth: 400
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -84,11 +84,11 @@ export default function ProjectCards() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
  
 
   return (
     <div id='mainRoot' className={classes.root}>
-    <div id='card1'>
     <Card className={classes.card} elevation={0} key={1}>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
       <CardHeader
@@ -134,7 +134,7 @@ export default function ProjectCards() {
         <CardContent>
           <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
           <Typography paragraph className={classes.typography}>
-            git clone https://github.com/jmsct/scraper 
+            git clone <Link href="https://github.com/jmsct/scraper" target="_blank" rel="noopener noreferrer" className={classes.link}>https://github.com/jmsct/scraper</Link> 
           </Typography>
           <Typography paragraph className={classes.typography}>
            Open relevant OS folder and run scraper
@@ -154,14 +154,12 @@ export default function ProjectCards() {
         </CardContent>
       </Collapse>
     </Card>
-    </div>
     
     
-    <div id='card2'>
     <Card className={classes.card} elevation={0} key={2}>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
       <CardHeader
-        title="Command Line Web Scraper"
+        title="Recon Forever"
       />
       </Typography>
       <CardActionArea>
@@ -176,13 +174,29 @@ export default function ProjectCards() {
       />
       </CardActionArea>
       <CardContent >
-        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
-          Written in Python and bundled for Windows, Linux and Mac, this tool was written for a colleague that required gamelogs data for each team listed on 
-          <Link href="https://www.sports-reference.com/cbb/seasons/2019-school-stats.html" target="_blank" rel="noopener noreferrer" className={classes.link}> this page</Link>. 
-          This tool retrieves the gamelogs for each team for a specific year or start from a specific year and return the gamelogs for every subsequent year e.g.(2012 - current year).
-          This data is then exported as a csv document. 
-          Instructions for usage and modules used are specified below.
-        </Typography>
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
+          <Typography paragraph className={classes.typography}>
+          Web App recon tool that:
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - Scans for subdomains
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - Resolves live hosts
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - Brute-force directories
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - Brute-force files
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - Brute-force valid parameters
+          </Typography>
+          <Typography paragraph className={classes.typography}>
+           - outputs to a file to be loaded into burpsuite for testing
+          </Typography>
+          </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" className={classes.iconButton}>
@@ -223,7 +237,6 @@ export default function ProjectCards() {
         </CardContent>
       </Collapse>
     </Card>
-    </div>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import classNames from 'classnames'
 import NavBar from "../NavBar/NavBar";
 import Main from "./Main/Main";
 import TechStackIcons from "./TechStackIcons/TechStackIcons"
+import ProfileIcons from "./ProfileIcons/ProfileIcons"
 
 const styles = {
   root: {
@@ -22,6 +23,7 @@ function Landing(props) {
     <div className={classNames(classes.root, 'root ')}>
       <NavBar />
       <Main />
+      <ProfileIcons />
       <TechStackIcons />
     </div>
   );

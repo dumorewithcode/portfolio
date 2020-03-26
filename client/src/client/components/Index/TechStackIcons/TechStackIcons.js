@@ -6,12 +6,16 @@ import "typeface-montserrat";
 import iconData from "./iconData.json";
 
 import burp_logo from "../../../assets/icons/burp-icon.png"
+import metasploit_logo from "../../../assets/icons/metasploit-icon.png"
+import wireshark_logo from "../../../assets/icons/wireshark-icon.png"
+import activedirectory_logo from "../../../assets/icons/activedirectory-icon.png"
 
 const styles = {
 techStack: {
     display: "flex",
     justifyContent: "space-around",
     flexFlow: 'row wrap',
+    height: "20%",
   },
 
   iconContainer: {
@@ -20,7 +24,7 @@ techStack: {
     width: "80px",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: '50px'
+    marginTop: '70px'
   },
 
   icons: {
@@ -36,6 +40,26 @@ function TechStackIcons(props) {
   const { classes } = props;
   return (
       <div className={classNames(classes.techStack, "techStack")}>
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://portswigger.net/" target="blank">
+            <img
+              src={burp_logo}
+              alt="burpsuite"
+              title="burpsuite"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://www.metasploit.com/" target="blank">
+            <img
+              src={metasploit_logo}
+              alt="metasploit"
+              title="metasploit"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
         {iconData.map(icon => (
           <div className={classNames(classes.iconContainer, "iconContainer")} key={iconData.indexOf(icon)+1}>
             <a href={icon.link} target="blank">
@@ -49,15 +73,25 @@ function TechStackIcons(props) {
           </div>
         ))}
         <div className={classNames(classes.iconContainer, "iconContainer")}>
-        <a href="https://portswigger.net/" target="blank">
-              <img
-                src={burp_logo}
-                alt=""
-                title="burpsuite"
-                className={classNames(classes.icons, "icons")}
-              />
-            </a>
-            </div>
+          <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="blank">
+            <img
+              src={activedirectory_logo}
+              alt="active directory"
+              title="active directory"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://www.wireshark.org/" target="blank">
+            <img
+              src={wireshark_logo}
+              alt="wireshark"
+              title="wireshark"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
       </div>
   );
 }

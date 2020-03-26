@@ -1,13 +1,13 @@
 [
 {
+    "name": "linux",
+    "url": "https://cdn.svgporn.com/logos/linux-tux.svg",
+    "link": "https://www.linux.org/"
+},
+{
     "name": "python",
     "url": "https://cdn.svgporn.com/logos/python.svg",
     "link": "https://www.python.org/"
-},
-{
-    "name": "flask",
-    "url": "https://cdn.svgporn.com/logos/flask.svg",
-    "link": "https://palletsprojects.com/p/flask/"
 },
 {
     "name": "react",
@@ -15,18 +15,8 @@
     "link": "https://reactjs.org/"
 },
 {
-    "name": "materialui",
-    "url": "https://cdn.svgporn.com/logos/material-ui.svg",
-    "link": "https://portswigger.net/"
-},
-{
     "name": "git",
     "url": "https://cdn.svgporn.com/logos/git-icon.svg",
     "link": "https://git-scm.com/"
-},
-{
-    "name": "gatsby",
-    "url": "https://cdn.svgporn.com/logos/gatsby.svg",
-    "link": "https://www.gatsbyjs.org/"
 }
 ]
