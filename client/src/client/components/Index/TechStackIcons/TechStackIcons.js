@@ -9,6 +9,7 @@ import burp_logo from "../../../assets/icons/burp-icon.png"
 import metasploit_logo from "../../../assets/icons/metasploit-icon.png"
 import wireshark_logo from "../../../assets/icons/wireshark-icon.png"
 import activedirectory_logo from "../../../assets/icons/activedirectory-icon.png"
+import owasp_logo from "../../../assets/icons/owasp-icon.png"
 
 const styles = {
 techStack: {
@@ -72,6 +73,16 @@ function TechStackIcons(props) {
             </a>
           </div>
         ))}
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://owasp.org/www-project-top-ten/" target="blank">
+            <img
+              src={owasp_logo}
+              alt="owasp"
+              title="owasp top 10"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
         <div className={classNames(classes.iconContainer, "iconContainer")}>
           <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="blank">
             <img
