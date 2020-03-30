@@ -87,8 +87,8 @@ function TechStackIcons(props) {
           <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="blank">
             <img
               src={activedirectory_logo}
-              alt="active directory"
-              title="active directory"
+              alt="active directory attacks"
+              title="active directory attacks"
               className={classNames(classes.icons, "icons")}
             />
           </a>
