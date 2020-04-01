@@ -30,17 +30,12 @@ const useStyles = makeStyles(theme => ({
       '& label.Mui-focused': {
         color: 'white',
       },
-      '& .MuiInput-underline:after': {
+      '& .MuiInput-underline:before': {
         borderBottomColor: 'white',
       },
-      '& .MuiOutlinedInput-root': {
-        '&:hover fieldset': {
-          borderColor: 'yellow',
-        },
-        '& fieldset': {
-          borderColor: 'white',
-        },
-      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'white',
+      }
     },
     
     button: {
@@ -53,7 +48,7 @@ const useStyles = makeStyles(theme => ({
         padding: '0 30px',
         '&:hover': {
           background:"white"
-        }
+        },
       }
 }));
 
@@ -132,7 +127,8 @@ export default function Contact() {
         setAction("")
       return false;
   }
-}
+  }
+  
 
   const isValidMessage = () => {
     if(!validator.isEmpty(message)){
@@ -148,6 +144,14 @@ export default function Contact() {
   }
 }
 
+const clearErrors = () => {
+  setMessageHelperText("");
+  setMessageError(false);
+  setEmailHelperText("");
+  setEmailError(false);
+}
+
+
   return(
     <div className={classes.root}>
         <form className={classes.form} autoComplete="off" action={action} method="POST" onSubmit={handleSubmit}>
@@ -159,11 +163,13 @@ export default function Contact() {
                 label="Email"
                 placeholder="Enter email"
                 onChange={e => setEmail(e.target.value)}
-                onBlur={isValidEmail}
                 helperText={emailHelperText}
+                onFocus={clearErrors}
+                onBlur={isValidEmail}
                 required
                 autoComplete="true"
                 className={classes.textField}
+                spellcheck="false"
                 InputProps={{
                   style: {
                     color: "white"
@@ -181,10 +187,11 @@ export default function Contact() {
                 multiline
                 rows="15"
                 helperText={messageHelperText}
+                onFocus={clearErrors}
                 onBlur={isValidMessage}
-                onFocus={isValidMessage}
                 required
                 onChange={e => setMessage(e.target.value)}
+                spellcheck="false"
                 InputProps={{
                   style: {
                     color: "white"

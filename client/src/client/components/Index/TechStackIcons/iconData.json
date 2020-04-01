@@ -18,5 +18,10 @@
     "name": "git",
     "url": "https://cdn.svgporn.com/logos/git-icon.svg",
     "link": "https://git-scm.com/"
+},
+{
+    "name": "digital ocean",
+    "url": "https://cdn.svgporn.com/logos/digital-ocean.svg",
+    "link": "https://www.digitalocean.com/"
 }
 ]
