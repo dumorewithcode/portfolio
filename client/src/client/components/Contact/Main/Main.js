@@ -111,6 +111,8 @@ export default function Contact() {
     }
     else{
       setAction("");
+      isValidEmail();
+      isValidMessage();
       return false;
     }
   }
