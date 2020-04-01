@@ -36,9 +36,6 @@ export default function AboutPage() {
                     I enjoy doing ctf's in my spare time and writing scripts using either bash or python to simplify workflow that becomes too repetitive.
                     <br />
                     <br />
-                    My strength lies within the pentesting area of cyber security and writing simple scrips to automate workflows wherever necessary.
-                    <br />
-                    <br />
                     I am not an expert but my willingness to learn and adapt may surely be an asset to you, your team and  your company; with time, relevant skills, right mindset and a chance, I believe anyone can be valuable to any company.
                     <br />
                     <br />
