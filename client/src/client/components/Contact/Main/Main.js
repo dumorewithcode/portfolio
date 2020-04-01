@@ -111,46 +111,49 @@ export default function Contact() {
     }
     else{
       setAction("");
-      isValidEmail();
-      isValidMessage();
       return false;
     }
   }
 
   const isValidEmail = () => {
     if(validator.isEmail(email)){
-      setEmailHelperText("");
-      setEmailError(false);
+      clearEmailErrors();
       return true;
     }
     else{
-        setEmailHelperText("invalid email");
-        setEmailError(true);
-        setAction("")
-      return false;
-  }
-  }
-  
-
-  const isValidMessage = () => {
-    if(!validator.isEmpty(message)){
-      setMessageHelperText("");
-      setMessageError(false);
-      return true;
-    }
-    else{
-        setMessageHelperText("cannot be empty");
-        setMessageError(true);
-        setAction("")
+        showEmailErrors();
       return false;
   }
 }
 
-const clearErrors = () => {
-  setMessageHelperText("");
-  setMessageError(false);
+  const isValidMessage = () => {
+    if(!validator.isEmpty(message)){
+        clearMessageErrors();
+      return true;
+    }
+    else{
+        showMessageErrors();
+      return false;
+  }
+}
+const showEmailErrors = () => {
+  setEmailHelperText("invalid email");
+  setEmailError(true);
+}
+
+const showMessageErrors = () => {
+  setMessageHelperText("cannot be empty");
+  setMessageError(true);
+}
+
+const clearEmailErrors = () => {
   setEmailHelperText("");
   setEmailError(false);
+}
+
+const clearMessageErrors = () => {
+  setMessageHelperText("");
+  setMessageError(false);
 }
 
 
@@ -166,7 +169,7 @@ const clearErrors = () => {
                 placeholder="Enter email"
                 onChange={e => setEmail(e.target.value)}
                 helperText={emailHelperText}
-                onFocus={clearErrors}
+                onInput={clearEmailErrors}
                 onBlur={isValidEmail}
                 required
                 autoComplete="true"
@@ -189,7 +192,7 @@ const clearErrors = () => {
                 multiline
                 rows="15"
                 helperText={messageHelperText}
-                onFocus={clearErrors}
+                onInput={clearMessageErrors}
                 onBlur={isValidMessage}
                 required
                 onChange={e => setMessage(e.target.value)}
