@@ -47,10 +47,10 @@ function Main(props) {
     <div id='mainRoot' className={classes.root}>
         <div className={classNames(classes.textContainer, "textContainer")}>
         <Typography className={classNames(classes.text, "text")}>
-          Penetration
+          InfoSec
         </Typography>
         <Typography className={classNames(classes.text, "text")}>
-          Tester
+          Analyst
         </Typography>
         </div>
     </div>
