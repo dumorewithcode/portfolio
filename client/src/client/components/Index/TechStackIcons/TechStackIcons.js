@@ -6,9 +6,9 @@ import "typeface-montserrat";
 import iconData from "./iconData.json";
 
 import burp_logo from "../../../assets/icons/burp-icon.png"
-import metasploit_logo from "../../../assets/icons/metasploit-icon.png"
-import wireshark_logo from "../../../assets/icons/wireshark-icon.png"
-import activedirectory_logo from "../../../assets/icons/activedirectory-icon.png"
+// import metasploit_logo from "../../../assets/icons/metasploit-icon.png"
+// import wireshark_logo from "../../../assets/icons/wireshark-icon.png"
+// import activedirectory_logo from "../../../assets/icons/activedirectory-icon.png"
 import owasp_logo from "../../../assets/icons/owasp-icon.png"
 
 const styles = {
@@ -51,7 +51,7 @@ function TechStackIcons(props) {
             />
           </a>
         </div>
-        <div className={classNames(classes.iconContainer, "iconContainer")}>
+        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
           <a href="https://www.metasploit.com/" target="blank">
             <img
               src={metasploit_logo}
@@ -60,7 +60,7 @@ function TechStackIcons(props) {
               className={classNames(classes.icons, "icons")}
             />
           </a>
-        </div>
+        </div> */}
         {iconData.map(icon => (
           <div className={classNames(classes.iconContainer, "iconContainer")} key={iconData.indexOf(icon)+1}>
             <a href={icon.link} target="blank">
@@ -83,7 +83,7 @@ function TechStackIcons(props) {
             />
           </a>
         </div>
-        <div className={classNames(classes.iconContainer, "iconContainer")}>
+        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
           <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="blank">
             <img
               src={activedirectory_logo}
@@ -92,8 +92,8 @@ function TechStackIcons(props) {
               className={classNames(classes.icons, "icons")}
             />
           </a>
-        </div>
-        <div className={classNames(classes.iconContainer, "iconContainer")}>
+        </div> */}
+        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
           <a href="https://www.wireshark.org/" target="blank">
             <img
               src={wireshark_logo}
@@ -102,7 +102,7 @@ function TechStackIcons(props) {
               className={classNames(classes.icons, "icons")}
             />
           </a>
-        </div>
+        </div> */}
       </div>
   );
 }

@@ -30,16 +30,20 @@ export default function AboutPage() {
         <div className={classes.root}>
             <div className={classes.container}>
                 <Typography className={classes.typography}>
-                    Adaptable and self motivated learner that's passionate about the latest and greatest technologies with an emphasis on security research/analysis and penetration testing.
+                    Adaptable and self motivated learner that's passionate about the latest and greatest technologies with an emphasis on security research/analysis, penetration testing and automation.
                     <br />
                     <br />
-                    I enjoy doing ctf's in my spare time and writing scripts using either bash or python to simplify workflow that becomes too repetitive.
+                    I enjoy performing security audits on web/mobile apps and writing scripts using either bash or python to simplify workflow that becomes too repetitive.
+                    <br />
+                    <br />
+                    I am currently scripting an auditor that works as a wrapper around many open source security tools(including some of my own scripts) to automate the process of finding common security flaws within web apps. This is a private tool that is a work in progress 
+                    with plans to open source it when it's ready. Contact me for more info.
                     <br />
                     <br />
                     My willingness to learn and adapt may surely be an asset to you, your team and  your company; with time, relevant skills, right mindset and a chance, I believe anyone can be valuable to any company.
                     <br />
                     <br />
-                    I am currently open to opportunities within the cyber security discipline and if you feel as though my listed skills or willingness to learn/improve would be a great match for your company then it would be my utmost pleasure to hear from you.
+                    I am currently open to opportunities preferably within the cyber security discipline and if you feel as though my listed skills and willingness to learn/improve would be a great match for your company then it would be my utmost pleasure to hear from you.
                 </Typography>
             </div>
         </div>
