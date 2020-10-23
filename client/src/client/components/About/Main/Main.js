@@ -36,8 +36,8 @@ export default function AboutPage() {
                     I enjoy performing security audits on web/mobile apps and writing scripts using either bash or python to simplify workflow that becomes too repetitive.
                     <br />
                     <br />
-                    I am currently scripting an auditor that works as a wrapper around many open source security tools(including some of my own scripts) to automate the process of finding common security flaws within web apps. This is a private tool that is a work in progress 
-                    with plans to open source it when it's ready. Contact me for more info.
+                    I am currently scripting an auditor that works as a wrapper around many open source tools and my own scripts to automate the process of finding common security flaws within web apps. This is a private tool that is a work in progress 
+                    with a planned open source release when it's ready.
                     <br />
                     <br />
                     My willingness to learn and adapt may surely be an asset to you, your team and  your company; with time, relevant skills, right mindset and a chance, I believe anyone can be valuable to any company.
