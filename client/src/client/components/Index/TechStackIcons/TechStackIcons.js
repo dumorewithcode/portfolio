@@ -10,6 +10,8 @@ import burp_logo from "../../../assets/icons/burp-icon.png"
 // import wireshark_logo from "../../../assets/icons/wireshark-icon.png"
 // import activedirectory_logo from "../../../assets/icons/activedirectory-icon.png"
 import owasp_logo from "../../../assets/icons/owasp-icon.png"
+import powershell_logo from "../../../assets/icons/powershell-icon.png"
+import zap_logo from "../../../assets/icons/zap-icon.png"
 
 const styles = {
 techStack: {
@@ -42,25 +44,35 @@ function TechStackIcons(props) {
   return (
       <div className={classNames(classes.techStack, "techStack")}>
         <div className={classNames(classes.iconContainer, "iconContainer")}>
-          <a href="https://portswigger.net/" target="blank">
+          <a href="https://owasp.org/www-project-top-ten/" target="blank">
             <img
-              src={burp_logo}
-              alt="burpsuite"
-              title="burpsuite"
+              src={owasp_logo}
+              alt="OWASP"
+              title="OWASP Top 10"
               className={classNames(classes.icons, "icons")}
             />
           </a>
         </div>
-        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
-          <a href="https://www.metasploit.com/" target="blank">
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://www.zaproxy.org/" target="blank">
             <img
-              src={metasploit_logo}
-              alt="metasploit"
-              title="metasploit"
+              src={zap_logo}
+              alt="OWASP zap"
+              title="OWASP Zap"
               className={classNames(classes.icons, "icons")}
             />
           </a>
-        </div> */}
+        </div>
+        <div className={classNames(classes.iconContainer, "iconContainer")}>
+          <a href="https://portswigger.net/" target="blank">
+            <img
+              src={burp_logo}
+              alt="BurpSuite"
+              title="BurpSuite"
+              className={classNames(classes.icons, "icons")}
+            />
+          </a>
+        </div>
         {iconData.map(icon => (
           <div className={classNames(classes.iconContainer, "iconContainer")} key={iconData.indexOf(icon)+1}>
             <a href={icon.link} target="blank">
@@ -74,35 +86,15 @@ function TechStackIcons(props) {
           </div>
         ))}
         <div className={classNames(classes.iconContainer, "iconContainer")}>
-          <a href="https://owasp.org/www-project-top-ten/" target="blank">
+          <a href="https://docs.microsoft.com/en-us/powershell/" target="blank">
             <img
-              src={owasp_logo}
-              alt="owasp"
-              title="owasp top 10"
+              src={powershell_logo}
+              alt="Powershell"
+              title="Powershell"
               className={classNames(classes.icons, "icons")}
             />
           </a>
         </div>
-        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
-          <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="blank">
-            <img
-              src={activedirectory_logo}
-              alt="active directory attacks"
-              title="active directory attacks"
-              className={classNames(classes.icons, "icons")}
-            />
-          </a>
-        </div> */}
-        {/* <div className={classNames(classes.iconContainer, "iconContainer")}>
-          <a href="https://www.wireshark.org/" target="blank">
-            <img
-              src={wireshark_logo}
-              alt="wireshark"
-              title="wireshark"
-              className={classNames(classes.icons, "icons")}
-            />
-          </a>
-        </div> */}
       </div>
   );
 }

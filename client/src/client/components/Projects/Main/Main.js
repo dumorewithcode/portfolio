@@ -117,7 +117,7 @@ export default function ProjectCards() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" className={classes.iconButton}>
-          <a href='https://github.com/jmsct/scraper' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
+          <a href='https://github.com/a3kSec/scraper' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {
@@ -135,7 +135,7 @@ export default function ProjectCards() {
         <CardContent>
           <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
           <Typography paragraph className={classes.typography}>
-            git clone <Link href="https://github.com/jmsct/scraper" target="_blank" rel="noopener noreferrer" className={classes.link}>https://github.com/jmsct/scraper</Link> 
+            git clone <Link href="https://github.com/a3kSec/scraper" target="_blank" rel="noopener noreferrer" className={classes.link}>https://github.com/a3kSec/scraper</Link> 
           </Typography>
           <Typography paragraph className={classes.typography}>
            Open relevant OS folder and run scraper
@@ -201,7 +201,7 @@ export default function ProjectCards() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" className={classes.iconButton}>
-          <a href='https://github.com/jmsct/recon' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
+          <a href='https://github.com/a3kSec/recon' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {
@@ -219,7 +219,7 @@ export default function ProjectCards() {
         <CardContent>
           <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
           <Typography paragraph className={classes.typography}>
-            git clone https://github.com/jmsct/scraper 
+            git clone https://github.com/a3kSec/scraper 
           </Typography>
           <Typography paragraph className={classes.typography}>
            Open relevant OS folder and run scraper

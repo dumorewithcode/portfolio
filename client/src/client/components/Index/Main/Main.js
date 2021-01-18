@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import profileIcons from './profileIcons'
 import "typeface-montserrat";
 
 import "./Main.css";

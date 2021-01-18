@@ -1,27 +1,23 @@
 [
 {
-    "name": "linux",
-    "url": "https://cdn.svgporn.com/logos/linux-tux.svg",
-    "link": "https://www.linux.org/"
-},
-{
-    "name": "python",
-    "url": "https://cdn.svgporn.com/logos/python.svg",
-    "link": "https://www.python.org/"
-},
-{
-    "name": "bash",
-    "url": "https://cdn.svgporn.com/logos/bash.svg",
-    "link": "https://www.gnu.org/software/bash/"
-},
-{
-    "name": "git",
+    "name": "Git",
     "url": "https://cdn.svgporn.com/logos/git-icon.svg",
     "link": "https://git-scm.com/"
 },
 {
-    "name": "digital ocean",
-    "url": "https://cdn.svgporn.com/logos/digital-ocean.svg",
-    "link": "https://www.digitalocean.com/"
+    "name": "Linux",
+    "url": "https://cdn.svgporn.com/logos/linux-tux.svg",
+    "link": "https://www.linux.org/"
+},
+
+{
+    "name": "Python",
+    "url": "https://cdn.svgporn.com/logos/python.svg",
+    "link": "https://www.python.org/"
+},
+{
+    "name": "Bash",
+    "url": "https://cdn.svgporn.com/logos/bash.svg",
+    "link": "https://www.gnu.org/software/bash/"
 }
 ]

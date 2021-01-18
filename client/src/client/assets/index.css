@@ -3,8 +3,8 @@ body {
   margin: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: linear-gradient(45deg, #6095ff 30%, #53f442 80%) no-repeat center center fixed;
-  /* background-image: url(../src/images/background/sunset.jpg); */
+  background: rgb(155, 155, 155);
+  /* background: linear-gradient(45deg, #6095ff 30%, #53f442 80%) no-repeat center center fixed; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat'
