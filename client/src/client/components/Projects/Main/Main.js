@@ -14,7 +14,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Link from '@material-ui/core/Link';
 import "typeface-montserrat";
 
-import ReconForeverImage from "../../../assets/images/ReconForever.png"
+import get_image from "../../../assets/images/get.png"
+import essentials_image from "../../../assets/images/essentials.png"
 
 
 const useStyles = makeStyles(theme => ({
@@ -128,39 +129,15 @@ export default function ProjectCards() {
           aria-label="show more"
           disabled="true"
         >
-          
         </IconButton>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
-          <Typography paragraph className={classes.typography}>
-            git clone <Link href="https://github.com/a3kSec/scraper" target="_blank" rel="noopener noreferrer" className={classes.link}>https://github.com/a3kSec/scraper</Link> 
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           Open relevant OS folder and run scraper
-          </Typography>
-          <Typography paragraph className={classes.cardInfoHeaders}>
-           Modules used:
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           Python csv (makes exporting to csv a breeze)
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           BeautifulSoup (html parser)
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           grequests (for making asynchronous calls)
-          </Typography>
-        </CardContent>
-      </Collapse>
     </Card>
     
     
     <Card className={classes.card} elevation={0}>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
       <CardHeader
-        title="Recon Forever"
+        title="get"
       />
       </Typography>
       <CardActionArea>
@@ -168,7 +145,7 @@ export default function ProjectCards() {
         id ="iframeM"
         component="iframe"
         className={classes.media}
-        image={ReconForeverImage}
+        image={get_image}
         title="scraper"
         frameBorder={0}
         allowfullscreen
@@ -177,31 +154,13 @@ export default function ProjectCards() {
       <CardContent >
           <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
           <Typography paragraph className={classes.typography}>
-          Simple python script that automates my web app recon process. This tool:
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - Scans for subdomains
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - Resolves live hosts
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - Brute-force directories
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - Brute-force files
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - Brute-force valid parameters
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           - outputs to a file to be loaded into burpsuite for testing
+          A script that creates a target specific wordlist for pentesting using wayback
           </Typography>
           </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" className={classes.iconButton}>
-          <a href='https://github.com/a3kSec/recon' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
+          <a href='https://github.com/a3kSec/get' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {
@@ -215,29 +174,52 @@ export default function ProjectCards() {
           
         </IconButton>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph className={classes.cardInfoHeaders}>Usage:</Typography>
+    </Card>
+
+
+    <Card className={classes.card} elevation={0}>
+      <Typography variant="body2" color="textSecondary" component="p" className={classes.cardHeader}>
+      <CardHeader
+        title="essentials"
+      />
+      </Typography>
+      <CardActionArea>
+      <CardMedia
+        id ="iframeM"
+        component="iframe"
+        className={classes.media}
+        image={essentials_image}
+        title="scraper"
+        frameBorder={0}
+        allowfullscreen
+      />
+      </CardActionArea>
+      <CardContent >
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
           <Typography paragraph className={classes.typography}>
-            git clone https://github.com/a3kSec/scraper 
+          - For Windows
+          <br>
+          </br>
+          - The intent of this script is to help install many apps after a reformat
           </Typography>
-          <Typography paragraph className={classes.typography}>
-           Open relevant OS folder and run scraper
           </Typography>
-          <Typography paragraph className={classes.cardInfoHeaders}>
-           Modules used:
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           Python csv (makes exporting to csv a breeze)
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           BeautifulSoup (html parser)
-          </Typography>
-          <Typography paragraph className={classes.typography}>
-           grequests (for making asynchronous calls)
-          </Typography>
-        </CardContent>
-      </Collapse>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites" className={classes.iconButton}>
+          <a href='https://github.com/a3kSec/get' target='_blank' rel="noopener noreferrer" className={classes.a}><img src='https://cdn.svgporn.com/logos/github-icon.svg' className={classes.githubAvatar}/></a>
+        </IconButton>
+        <IconButton
+          className={clsx(classes.expand, {
+            [classes.expandOpen]: expanded,
+          })}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+          disabled="true"
+        >
+          
+        </IconButton>
+      </CardActions>
     </Card>
     </div>
   );
