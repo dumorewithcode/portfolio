@@ -19,7 +19,7 @@
     "@material-ui/lab": "^4.0.0-alpha.47",
     "@material-ui/styles": "^4.7.1",
     "classnames": "^2.2.6",
-    "gatsby": "^2.30.3",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-material-ui": "^2.1.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
